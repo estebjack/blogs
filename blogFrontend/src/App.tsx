@@ -65,6 +65,7 @@ const App = () => {
 
   const addVote = (id) => {
     const blog = blogs.find(blog => blog.id === id )
+
     const n = blog.votes + 1
     const changeBlog =  {...blog, votes: Number(n)}
 
